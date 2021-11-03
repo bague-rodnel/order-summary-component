@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --font-family: "Red Hat Display", sans-serif;
+  --blue-pale: hsl(225, 100%, 94%);
+  --blue-bright: hsl(245, 75%, 52%);
+  --blue-bright-hovered: hsl(245, 83%, 68%);
+
+  --blue-very-pale: hsl(225, 100%, 98%);
+  --blue-desaturated: hsl(224, 23%, 55%);
+  --blue-dark: hsl(223, 47%, 23%);
+
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--blue-pale);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  padding-top: 5rem;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue-dark);
+  font-weight: 900;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.card {
+  min-width: 340px;
+  width: 33.33%;
+  max-width: 720px;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem 0 hsla(245, 75%, 52%, 0.15);
+
+  text-align: center;
+  color: var(--blue-desaturated);
+}
+
+.card__heading {
+  font-size: 1.36em;
+}
+
+.card__body {
+  padding: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.card__message {
+  padding: 0 0.8rem;
+}
+
+.card__items-summary {
+  background-color: var(--blue-very-pale);
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.card__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__item-change {
+  font-weight: 700;
+  color: var(--blue-bright);
+}
+
+.card__item-change:hover {
+  color: var(--blue-bright-hovered);
+  text-decoration: none;
+}
+
+.card__btn {
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card__btn.btn-primary {
+  border-radius: 0.5rem;
+  background-color: var(--blue-bright);
+  box-shadow: 0 1rem 2rem 0 hsla(245, 75%, 52%, 0.15);
+  padding: 0.8rem;
+  color: white;
+}
+
+.card__btn.btn-primary:hover {
+  background-color: var(--blue-bright-hovered);
+}
+
+.card__btn.btn-secondary {
+  color: var(--blue-desaturated);
+}
+
+.card__btn.btn-secondary:hover {
+  color: var(--blue-dark);
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 17px;
+  }
+
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
+@media (min-width: 1440px) {
+  :root {
+    font-size: 21px;
+  }
+}
