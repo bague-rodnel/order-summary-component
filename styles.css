@@ -140,17 +140,8 @@ img {
   color: var(--blue-dark);
 }
 
-/* @media (min-width: 992px) {
-  :root {
-    font-size: 17px;
-  }
-
+@media (min-width: 992px) {
   body {
     background-image: url(images/pattern-background-desktop.svg);
   }
 }
-@media (min-width: 1440px) {
-  :root {
-    font-size: 21px;
-  }
-} */
